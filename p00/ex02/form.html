@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>formulaire</title>
+    </head>
+    <body>
+        <form id="myForm" onsubmit="displayFormContents(); return false;">
+            <p>
+                <label>Firstname</label> : <input type="text" name="Firstname" id="firstname"><br>
+                <label>Name</label> : <input type="text" name="Name" id="name" size="30" maxlength="20"><br>
+                <label>Age</label> : <input type="number" name="Age" id="age"><br>
+                <label>Phone</label> : <input type="tel" name="Phone" id="phone"><br>
+                <label>Email</label> : <input type="email" name="Email" id="email"><br>
+                <label for="student">Student at 42 ?</label> : <input type="checkbox" name="student" id="student"><br>
+            </p>
+            <p>
+                Gender :
+                    <label for="gender_male">Male</label><input type="radio" name="Gender" value="gender_male" id="gender_male">
+                    <label for="gender_other">Other</label><input type="radio" name="Gender" value="gender_other" id="gender_other">
+                    <label for="gender_female">Female</label><input type="radio" name="Gender" value="gender_female" id="gender_female">
+            </p>
+            <p>
+                <input type="submit" value="Envoyer">
+            </p>
+        </form>
+        <script src="popup.js"></script>
+    </body>
+</html>

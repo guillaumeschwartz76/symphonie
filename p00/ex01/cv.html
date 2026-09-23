@@ -4,10 +4,89 @@
         <!-- Ceci est un commentaire -->
         <meta charset="utf-8">
         <title>GSCHWART CV</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 30px;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            h2 {
+                margin-top: 30px;
+            }
+
+            table {
+                border: 2px solid black;
+            }
+
+            th, td {
+                border: 1px solid black;
+                padding: 8px 15px;
+            }
+        </style>
     </head>
     <body>
         <!-- br permet de revenir a la ligne -->
-        <h1>Gschwart CV</h1>
-        <p>paragraphe <br> hello</p>
+        <h1>guillaume schwartz CV</h1>
+        <p>DEVELOPPEUR APPLICATIF <br><strong>recherche une alternance de 2 ans</strong></p>
+        <table style="border-collapse: collapse;">
+            <!-- legende du tableau -->
+            <caption>skills</caption>
+            <!-- thead =  entete du tableau -->
+            <thead>
+                <!-- scope col = colonne ou row = ligne-->
+                <tr>
+                    <th scope="col">langues</th>
+                    <th scope="col">niveau</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">francais</th>
+                    <td>natif</td>
+                </tr>
+                <tr>
+                    <th scope="row">anglais</th>
+                    <td style="border-color: #424242;">intermediaire</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- em italique-->
+        <h2><em>competences</em></h2>
+        <!-- ul liste non ordonne-->
+        <section>
+            <h3> ft-transcendance </h3>
+                <ul>
+                    <li>realisation du backend en django</li>
+                    <li>realisation d'une ia en js</li>
+                    <li>travail d'equipe sur git avec microservice docker</li>
+                </ul>
+            <h3> minishell </h3>
+                <ul>
+                    <li>reproduction d'un shell simple</li>
+                    <li>gestion des pipes et des redirection</li>
+                    <li>realisation de build-in</li>
+                </ul>
+            <h3> projet diverse </h3>
+                <ul>
+                    <li>realisation de fractal</li>
+                    <li>realisation d'un labyrinthe en 3d</li>
+                    <li>realisation d'un algorithme de tri</li>
+                </ul>
+        </section>
+        <section>
+            <!--  mark souligner-->
+            <h2> <mark>experiences autres</mark></h2>
+            <!-- ol liste ordonne -->
+            <ol>
+                <li>2022 comptable</li>
+                <li>2020 comptable</li>
+            </ol>
+        </section>
     </body>
 </html>
